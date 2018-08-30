@@ -46,7 +46,8 @@ const simulator = {
     speed: 600, // px/s
     acceleration: 0, // px/s2
     inclination: 0, // degress
-    fuel: 70 // units
+    fuel: 130, // units
+    landing: true
   }
 };
 

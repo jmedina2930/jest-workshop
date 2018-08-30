@@ -8,10 +8,10 @@ const getAirplaneConditions = airplane => {
 
   const isTooHigh = y > 300;
   const isTooLow = y < -10;
-  const isOff = speed < 50 && y > 10;
-  const isOutOfFuel = fuel < 0;
+  const isOff = speed < 10 && y > 10;
+  const isOutOfFuel = fuel < 0 && y > 0;
   const isTooFast = acceleration > 100;
-  const isTooFastOnGround = speed > 300 && y <= 0;
+  const isTooFastOnGround = speed > 550 && y <= 0;
 
   const isOk = !(isTooHigh || isTooLow || isOff || isOutOfFuel || isTooFast || isTooFastOnGround);
 
